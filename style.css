@@ -123,8 +123,99 @@ display: inline-flex;
 /* MOVIE PAGE END */
 
 
+/* INSIDE & OUTSIDE PAGES */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.Containers {
+    display: none;
+}
+
+/* forward & Back buttons */
+.Back, .forward {
+    background-color: white;
+    opacity: 0.9;
+    box-shadow: 2px 2px 5px white;
+    cursor: pointer;
+    position: absolute;
+    bottom:30px;
+    width: auto;
+    margin-top: -23px;
+    padding: 17px;
+    color: black;
+    font-weight: bold;
+    font-size: 19px;
+    transition: 0.4s ease;
+    border-radius: 1px;
+    user-select: none;
+}
+
+.forward {
+    right: 0px;
+    border-radius: 1px;
+}
 
 
+.Back:hover, .forward:hover {
+    box-shadow: 5px 5px 5px #5d5d5d;
+    background-color: #757575;
+
+}
+
+.Info {
+    font-family: BNRegular;
+    color: black;
+    box-shadow: 2px 3px 6px 0px #ffffff;
+    background-color: white;
+    font-size: 16px;
+    padding: 10px 14px;
+    margin-top: 25px;
+    width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.MessageInfo {
+    font-family: BNRegular;
+    color: #f2f2f3;
+    font-size: 14px;
+    padding: 10px 14px;
+    position: absolute;
+    top: 0;
+}
+.carouselImg {
+   max-height: 500px;
+    max-width:80%;
+    margin-left: auto;
+    margin-right:auto;
+    display: flex;
+    transition: 0.6s;
+}
+.carouselImg:hover{
+    transform: scale(1.2);
+}
+/* Faint animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.4s;
+    animation-name: fade;
+    animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+}
+
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+}
+/* INSIDE & OUTSIDE PAGES END */
 
 
 
